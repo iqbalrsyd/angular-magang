@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "crypto-portfolio": {
+    "angular-magang": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/crypto-portfolio",
+            "outputPath": "dist/angular-magang",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "crypto-portfolio:build:production"
+              "browserTarget": "angular-magang:build:production"
             },
             "development": {
-              "browserTarget": "crypto-portfolio:build:development"
+              "browserTarget": "angular-magang:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "crypto-portfolio:build"
+            "browserTarget": "angular-magang:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "crypto-portfolio"
+  "defaultProject": "angular-magang"
 }
